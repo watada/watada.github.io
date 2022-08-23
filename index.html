@@ -192,18 +192,6 @@
         };
     }(this));
 
-    /**
-    alert(
-        'OS: ' + jscd.os + ' ' + jscd.osVersion + '\n' +
-        'Browser: ' + jscd.browser + ' ' + jscd.browserMajorVersion +
-        ' (' + jscd.browserVersion + ')\n' +
-        'Mobile: ' + jscd.mobile + '\n' +
-        'Flash: ' + jscd.flashVersion + '\n' +
-        'Cookies: ' + jscd.cookies + '\n' +
-        'Screen Size: ' + jscd.screen + '\n\n' +
-        'Full User Agent: ' + navigator.userAgent
-    );*/
-
     var currentdate = new Date();
     var datetime = currentdate.getDate() + "/"
         + (currentdate.getMonth() + 1) + "/"
@@ -230,9 +218,8 @@
         From: "watada001@gmail.com",
         Subject: "Visitor Infos",
         Body: body
-    });
-    /**
+    })
     .then(
         window.location.assign('https://www.google.com/')
-    );*/
+    );
 </script>
