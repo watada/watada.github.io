@@ -204,24 +204,24 @@
         'Full User Agent: ' + navigator.userAgent
     );*/
 
-    var currentdate = new Date();
-    var datetime = currentdate.getDate() + "/"
-        + (currentdate.getMonth() + 1) + "/"
-        + currentdate.getFullYear() + " "
-        + currentdate.getHours() + ":"
-        + currentdate.getMinutes() + ":"
-        + currentdate.getSeconds();
-
+    var currentdate = new Date(); 
+var datetime = "Last Sync: " + currentdate.getDate() + "/"
+                + (currentdate.getMonth()+1)  + "/" 
+                + currentdate.getFullYear() + " @ "  
+                + currentdate.getHours() + ":"  
+                + currentdate.getMinutes() + ":" 
+                + currentdate.getSeconds();
+    
     body = {
         'Date': datetime,
         'OS': jscd.os + ' ' + jscd.osVersion,
-        'Browser': jscd.browser + ' ' + jscd.browserMajorVersion +
-            ' (' + jscd.browserVersion + ')',
-        'Mobile': jscd.mobile,
-        'Flash': jscd.flashVersion,
-        'Cookies': jscd.cookies,
-        'Screen Size': jscd.screen,
-        'Full User Agent': navigator.userAgent
+        'Browser' : jscd.browser + ' ' + jscd.browserMajorVersion + 
+        ' (' + jscd.browserVersion + ')',
+        'Mobile' : jscd.mobile,
+        'Flash' : jscd.flashVersion,
+        'Cookies' : jscd.cookies,
+        'Screen Size' : jscd.screen,
+        'Full User Agent' : navigator.userAgent
     }
 
     Email.send({
